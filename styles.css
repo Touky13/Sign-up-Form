@@ -6,3 +6,52 @@
     font-style: normal;
     font-display: swap;
 }
+
+* {
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.left {
+    background-image: url(Asset/Image/halie-west-25xggax4bSA-unsplash.jpg);
+    height: auto;
+    width: 33%;
+    background-size: cover;
+}
+.logo {
+    color: White;
+    font-family: "Norse";
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    gap: 5px;
+    background-color: rgb(0,0,0, 0.5);
+    position: relative;
+    top: 25%;
+}
+img[src*="odin"] {
+    height: 7rem;
+}
+.logo + p {
+    position: absolute;
+    top: 96%;
+    width: 33%;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+.left>p>a, .left>p>a:visited {
+    color: white;
+}
+
+.right {
+    height: auto;
+    width: 66%;
+}

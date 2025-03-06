@@ -9,6 +9,8 @@
 
 * {
     margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
 }
 
 body {
@@ -30,11 +32,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10rem;
+    height: 8rem;
     gap: 5px;
     background-color: rgb(0,0,0, 0.5);
     position: relative;
-    top: 25%;
+    top: 22%;
 }
 img[src*="odin"] {
     height: 7rem;
@@ -52,6 +54,83 @@ img[src*="odin"] {
 }
 
 .right {
+    display: flex;
+    flex-direction: column;
     height: auto;
     width: 66%;
+    background-color: oklch(0.967 0.003 264.542);
+}
+.right> p, form {
+    padding: 0 0 0 2rem;
+} 
+
+.right> p:first-of-type {
+    max-inline-size: 55ch;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 4rem;
+    flex: 2;
+}
+
+form {
+    background-color: white;
+    box-shadow: lightgrey 0px 2px 4px;
+    flex: 1;
+    padding: 15px 0px 15px 2rem;
+}
+
+input, label {
+    display: block;
+}
+
+Legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+fieldset {
+    display: flex;
+    gap: 4rem;
+    font-size: 14px;
+    border: 0px;
+    padding: 10px 0px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+input:invalid {
+    border: 1px solid red;
+}
+input:focus {
+    border: 1px solid #E5E7EB;
+    outline: 1px solid lightskyblue;
+    box-shadow: grey 0px 2px 4px;
+}
+
+button {
+    bottom: 21%;
+    background-color: #596D48;
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+    padding: 8px 40px;
+    font-size: 1.2rem;
+    border: 1px solid #E5E7EB;
+    font-weight: bold;
+}
+
+.right> p:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex: 2;
+    padding: 0 0 20px 2rem;
+    font-size: 1.2rem;
+}
+
+.right p span {
+    color: #596D48;
+    font-weight: bold;
 }
